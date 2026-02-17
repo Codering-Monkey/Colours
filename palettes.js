@@ -1,4 +1,4 @@
-import { id } from "./script"
+import { id } from "./script.js"
 import palettes from "./sorted.json" with { type: "json" }
 
 let parent = id("palettes")

@@ -1,4 +1,4 @@
-import { id } from "./script"
+import { id } from "./script.js"
 
 const colour_buttons = ["red", "orange", "yellow", "green", "blue", "pink", "purple", "brown", "black", "white"];
 
