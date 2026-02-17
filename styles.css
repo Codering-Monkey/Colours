@@ -1,0 +1,25 @@
+body {
+    background-color: white;
+}
+
+.line {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    justify-content: center;
+    max-width: calc(11 * 60px);
+    position: sticky;
+    top: 8px
+}
+
+.line div {
+    aspect-ratio: 1 / 1;
+    max-width: 50px;
+    box-shadow: 2px 2px black;
+    margin: 0 5px;
+    transition: 0.25s;
+    border-radius: 50px;
+}
+
+.line div:hover {
+    box-shadow: 4px 4px black;
+}
