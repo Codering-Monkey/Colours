@@ -1,16 +1,6 @@
+import { id } from "./script"
+
 const colour_buttons = ["red", "orange", "yellow", "green", "blue", "pink", "purple", "brown", "black", "white"];
-
-function id(id) {
-    return document.getElementById(id);
-}
-
-Storage.prototype.get = function(key) {
-    return JSON.parse(this.getItem(key))
-}
-
-Storage.prototype.set = function(key, value) {
-    this.setItem(key, JSON.stringify(value));
-}
 
 for (let i = 0; i < colour_buttons.length; i++) {
     let button = id(colour_buttons[i])
