@@ -30,3 +30,48 @@ body {
 .line div:hover {
     box-shadow: 4px 4px black;
 }
+
+#palettes {
+    display: grid;
+    grid-template-columns: repeat(calc(calc(100vw / 400) / 1px), 1fr);
+    column-gap: 16px;
+}
+
+.palette {
+    border: 2px solid color-mix(in srgb, white, black);
+    background-color: white;
+    border-radius: 32px;
+    box-shadow: 2px 2px black;
+    overflow: hidden;
+    margin: 8px 0;
+    transition: 0.5s
+}
+
+.palette:hover {
+    box-shadow: 5px 5px black;
+}
+
+.title {
+    padding: 8px 16px
+}
+
+.title h2 {
+    margin: 0;
+    font-weight: bolder;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.content {
+    height: 0;
+}
+
+.colours {
+    height: 43px
+}
+
+.colours div {
+    width: 25%;
+    float: left;
+    height: 100%
+}
