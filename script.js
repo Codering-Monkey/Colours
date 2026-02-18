@@ -33,3 +33,13 @@ export function capitalise(string, allWords=false) {
 	}
 	return arrayToString(stringWords)
 }
+
+export async function copy(text) {
+    await navigator.clipboard.writeText(text);
+}
+
+export function hover(element, colour) {
+    const oldColour = element.style.color
+    element.addEventListener("mouseenter", function() {element.style.color = colour})
+    element.addEventListener("mouseleave", function() {element.style.color = oldColour})
+}
