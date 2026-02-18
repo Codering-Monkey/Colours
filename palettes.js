@@ -12,6 +12,9 @@ Object.entries(palettes).forEach(([key, value]) => {
 })
 
 export async function render_palettes() {
+    while (parent.firstChild) {
+        parent.removeChild(parent.lastChild)
+    }
     let render_data = palettes[sessionStorage.get("colour")]
     for (let i = 0; i < render_data.length; i++) {
         let response = await fetch("./json/" + render_data[i] + ".json")
