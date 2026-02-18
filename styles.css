@@ -59,7 +59,6 @@ body {
     margin: 0;
     font-weight: bolder;
     transition: 0.5s;
-    cursor: pointer;
 }
 
 .content {
