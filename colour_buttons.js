@@ -1,4 +1,5 @@
 import { id } from "./script.js"
+import { render_palettes } from "./palettes.js"
 
 const colour_buttons = ["red", "orange", "yellow", "green", "blue", "pink", "purple", "brown", "black", "white"];
 
@@ -6,7 +7,7 @@ for (let i = 0; i < colour_buttons.length; i++) {
     let button = id(colour_buttons[i])
     button.style.backgroundColor = "color-mix(in srgb, " + colour_buttons[i] + ", white)";
     button.style.border = "solid 2px color-mix(in srgb, " + colour_buttons[i] + ", black)"
-    button.addEventListener("click", function() { setColour(colour_buttons[i]) })
+    button.addEventListener("click", function() { setColour(colour_buttons[i]); render_palettes().then() })
 }
 let button = id("any")
 const rainbow_colours = ["red", "orange", "yellow", "green", "blue", "purple", "red"]
@@ -16,7 +17,7 @@ for (let i = 0; i < rainbow_colours.length; i++) {
 }
 button.style.backgroundImage = "conic-gradient(" + rainbow_string.slice(0, -2) + ")";
 button.style.border = "solid 2px black"
-button.addEventListener("click", function() { setColour("any") })
+button.addEventListener("click", function() { setColour("any"); render_palettes().then() })
 setColour("any")
 
 for (let i = 0; i < 100; i++) {
