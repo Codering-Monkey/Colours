@@ -10,6 +10,14 @@ Storage.prototype.set = function(key, value) {
     this.setItem(key, JSON.stringify(value));
 }
 
+export function arrayToString(array) {
+	let string = ""
+	for (let i = 0; i < array.length; i++) {
+		string += array[i]
+	}
+	return string
+}
+
 export function capitalise(string, allWords=false) {
 	let stringWords
 	if (allWords) {
