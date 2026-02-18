@@ -28,7 +28,7 @@ export async function render_palettes() {
         let titleText = document.createElement("h2")
         titleText.textContent = capitalise(render_data[i])
         hover(titleText, palette_data["--contrast"])
-        titleText.addEventListener("click", async function () {await copy(window.location.host + "Colours/json/" + render_data[i] + ".json")})
+        titleText.addEventListener("click", async function () {await copy("https://" + window.location.host + "/Colours/json/" + render_data[i] + ".json")})
         title.appendChild(titleText)
 
         let content = document.createElement("div")
