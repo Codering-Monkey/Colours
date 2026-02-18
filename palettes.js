@@ -39,3 +39,15 @@ export async function render_palettes() {
         colours.classList.add("colours")
         container.appendChild(colours)
 
+        let colour_spaces = ["--light", "--main", "--dark", "--contrast"]
+        for (let k = 0; k < colour_spaces.length; k++) {
+            let colour_box = document.createElement("div")
+            colour_box.style.backgroundColor = palette_data[colour_spaces[k]]
+            colours.appendChild(colour_box)
+        }
+
+        parent.appendChild(container)
+    }
+}
+
+render_palettes().then()
