@@ -20,6 +20,7 @@ export async function render_palettes() {
         let response = await fetch("./json/" + render_data[i] + ".json")
         let palette_data = await response.json();
         let container = document.createElement("div")
+        container.addEventListener("click", async function () {await copy("https://" + window.location.host + "/Colours/json/" + render_data[i] + ".json")})
         container.className = "palette"
 
         let title = document.createElement("div")
@@ -30,8 +31,6 @@ export async function render_palettes() {
 
         let titleText = document.createElement("h2")
         titleText.textContent = capitalise(render_data[i])
-        hover(titleText, palette_data["--contrast"])
-        titleText.addEventListener("click", async function () {await copy("https://" + window.location.host + "/Colours/json/" + render_data[i] + ".json")})
         title.appendChild(titleText)
 
         let content = document.createElement("div")
