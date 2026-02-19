@@ -28,6 +28,7 @@ export async function render_palettes() {
         title.addEventListener("click", async function () {await copy("https://" + window.location.host + "/Colours/json/" + render_data[i] + ".json")})
         title.style.backgroundImage = palette_data["--image"]
         title.style.backgroundSize = palette_data["--image-size"]
+        title.style.color = palette_data["--alt-text"]
         container.appendChild(title)
 
         let titleText = document.createElement("h2")
