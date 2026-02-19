@@ -6,10 +6,14 @@
 
 * {
     font-family: 'Comfortaa', sans-serif;
+    overflow: visible;
+    scrollbar-color: var(--button) white;
+    caret-color: transparent;
 }
 
 body {
     background-color: white;
+    overflow-y: scroll
 }
 
 .line {
