@@ -36,4 +36,7 @@ function setColour(colour) {
     }
     id(colour).style.cornerShape = "bevel"
     sessionStorage.set("colour", colour)
+    if (colour !== "any") {
+        document.documentElement.style.setProperty('--button', "color-mix(in srgb, " + colour + ", black)");
+    }
 }
