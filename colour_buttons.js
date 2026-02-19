@@ -20,10 +20,6 @@ button.style.border = "solid 2px black"
 button.addEventListener("click", function() { setColour("any"); render_palettes().then() })
 setColour("any")
 
-for (let i = 0; i < 100; i++) {
-    id("break").appendChild(document.createElement("br"))
-}
-
 let text = document.createElement("p")
 text.textContent = "hi"
 id("break").appendChild(text)
