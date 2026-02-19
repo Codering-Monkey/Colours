@@ -46,7 +46,6 @@ body {
 }
 
 .palette {
-    border: 2px solid color-mix(in srgb, white, black);
     background-color: white;
     border-radius: 32px;
     box-shadow: 2px 2px black;
