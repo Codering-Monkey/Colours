@@ -75,3 +75,14 @@ body {
     float: left;
     height: 100%
 }
+
+.colour_box {
+    transition: 0.25s
+}
+
+.colour_box h3 {
+    text-align: center;
+    display: none;
+    transition: 0.25s;
+    cursor: pointer;
+}
