@@ -1,4 +1,4 @@
-import { copy, id, capitalise, hover } from "./script.js"
+import { copy, id, capitalise, hover, hoverShadow } from "./script.js"
 import palettes from "./sorted.json" with { type: "json" }
 
 let parent = id("palettes")
@@ -21,6 +21,8 @@ export async function render_palettes() {
         let palette_data = await response.json();
         let container = document.createElement("div")
         container.style.backgroundColor = palette_data["--contrast"]
+        container.style.boxShadow = "2px 2px " + palette_data["--shadow"]
+        hoverShadow(container, "5px 5px " + palette_data["--shadow"])
         container.className = "palette"
 
         let title = document.createElement("div")

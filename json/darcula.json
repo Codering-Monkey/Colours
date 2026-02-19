@@ -7,5 +7,5 @@
     "--alt-text": "#A9B7C6",
     "--image": "linear-gradient(#222222, #222222)",
     "--image-size": ".5rem 10rem",
-    "--hover": "#5F864C"
+    "--shadow": "#5F864C"
 }

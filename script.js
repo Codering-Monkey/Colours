@@ -43,3 +43,9 @@ export function hover(element, colour) {
     element.addEventListener("mouseenter", function() {element.style.color = colour})
     element.addEventListener("mouseleave", function() {element.style.color = oldColour})
 }
+
+export function hoverShadow(element, shadow) {
+    const oldShadow = element.style.boxShadow
+    element.addEventListener("mouseenter", function() {element.style.boxShadow = shadow})
+    element.addEventListener("mouseleave", function() {element.style.boxShadow = oldShadow})
+}
