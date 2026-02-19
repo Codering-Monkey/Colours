@@ -1,0 +1,11 @@
+{
+    "--main": "#313335",
+    "--light": "#3C3F41",
+    "--dark": "#2B2B2B",
+    "--contrast": "#C55C2D",
+    "--text": "#A9B7C6",
+    "--alt-text": "#A9B7C6",
+    "--image": "linear-gradient(#222222, #222222)",
+    "--image-size": ".5rem 10rem",
+    "--hover": "#5F864C"
+}
