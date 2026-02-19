@@ -20,6 +20,7 @@ export async function render_palettes() {
         let response = await fetch("./json/" + render_data[i] + ".json")
         let palette_data = await response.json();
         let container = document.createElement("div")
+        container.style.backgroundColor = palette_data["--contrast"]
         container.className = "palette"
 
         let title = document.createElement("div")
